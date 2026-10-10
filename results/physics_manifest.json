@@ -1,0 +1,34 @@
+{
+  "arxiv_preprint_id": "2610.00001",
+  "arxiv_preprint_status": "local-draft-only",
+  "benchmark_runtime_hours": 0.001,
+  "d0_cluster": {
+    "bond_length_pm": 2.3,
+    "cluster_model": "Holmlid s=2 effective geometry",
+    "phase_s1_bond_length_pm": 0.56
+  },
+  "deterministic": true,
+  "gamma_511": {
+    "karabut_1995_reference": 1.0,
+    "line_energy_keV": 511.0,
+    "positron_lifetime_us": 2.2,
+    "relative_intensity": 0.96
+  },
+  "hg201": {
+    "transition_keV": 1564.8,
+    "transition_type": "M1+E2 nuclear isomer"
+  },
+  "model_family": "deterministic effective FCQC response model",
+  "run_command": [
+    "python3",
+    "karabut_fcqc_simulator.py"
+  ],
+  "schema_version": "1.0",
+  "simulation_seed": 42,
+  "spin_transfer": [
+    {
+      "kappa_ps": 16.6,
+      "st_efficiency": 0.94
+    }
+  ]
+}

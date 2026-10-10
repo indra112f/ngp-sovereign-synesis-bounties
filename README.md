@@ -73,6 +73,13 @@ Develop a physics simulation code that:
 3. Achieves **Spin-Transfer efficiency (ST-efficiency) ≥ 0.92** at damping coefficient **κ = 16.6 ps⁻¹** in the Karabut glow-discharge geometry.
 4. Predicts the **511 keV positron-annihilation gamma line** intensity within 15% of experimentally reported values.
 
+### Local Prototype
+
+- Simulator: [`karabut_fcqc_simulator.py`](karabut_fcqc_simulator.py)
+- Documentation: [`docs/karabut-fcqc-simulator.md`](docs/karabut-fcqc-simulator.md)
+- Notebook: [`notebooks/bounty2_karabut_fcqc.ipynb`](notebooks/bounty2_karabut_fcqc.ipynb)
+- Manifest: [`results/physics_manifest.json`](results/physics_manifest.json)
+
 ---
 
 ## Bounty #3 — DryLab4 & SiLA 2 Robotic Bridge

@@ -4,6 +4,7 @@ Run: pytest tests/test_bounty3_sila2.py -v
 """
 import json
 import pathlib
+import shutil
 import subprocess
 import time
 import statistics
@@ -100,6 +101,8 @@ def test_ich_q14_audit_trail(manifest):
 # Test 6: Docker Compose stack starts cleanly
 # ---------------------------------------------------------------------------
 def test_docker_compose_start():
+    if shutil.which("docker") is None:
+        pytest.skip("Docker CLI unavailable; integration stack check not runnable")
     result = subprocess.run(
         ["docker", "compose", "up", "--wait", "--timeout", "120"],
         capture_output=True, text=True, timeout=150
